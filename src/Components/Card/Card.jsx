@@ -5,15 +5,17 @@ import Title from './Title';
 import Subtitle from './Subtitle';
 import Quote from './Quote';
 import Image from './Image';
+import { Wrapper } from './Card.styles';
 
-const Card = ({ children }) => (
-  <div>
+const Card = ({ children, variant }) => (
+  <Wrapper variant={variant}>
     {children}
-  </div>
+  </Wrapper>
 );
 
 Card.propTypes = {
   children: PropTypes.node.isRequired,
+  variant: PropTypes.oneOf(['primary', 'light', 'medium', 'dark']).isRequired,
 };
 
 Card.Title = Title;

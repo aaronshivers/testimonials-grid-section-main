@@ -6,9 +6,9 @@ const Main = () => (
   <main>
     {
       cardData.map(({
-        id, image, title, subtitle, statement, quote,
+        id, image, title, subtitle, statement, quote, variant,
       }) => (
-        <Card key={id}>
+        <Card key={id} variant={variant}>
           <Card.Image
             src={image}
             alt={title}
