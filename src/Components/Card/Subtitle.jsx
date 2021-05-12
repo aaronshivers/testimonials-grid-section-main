@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { StyledSubtitle } from './Card.styles';
 
 const Subtitle = ({ children }) => (
-  <h2>
+  <StyledSubtitle>
     {children}
-  </h2>
+  </StyledSubtitle>
 );
 
 Subtitle.propTypes = {

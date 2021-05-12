@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Img } from './Image.styles';
 
 const Image = ({ src, alt }) => (
-  <img alt={alt} src={src} />
+  <Img alt={alt} src={src} />
 );
 
 Image.propTypes = {
