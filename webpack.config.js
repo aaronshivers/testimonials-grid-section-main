@@ -11,6 +11,11 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
+      }, {
+        test: /\.(png|jpg)$/,
+        use: {
+          loader: 'url-loader',
+        },
       },
     ],
   },

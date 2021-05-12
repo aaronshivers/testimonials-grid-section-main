@@ -1,14 +1,18 @@
 import React from 'react';
 import Card from '../../Components/Card';
-import cardData from '../../Assets/cardData.json';
+import cardData from '../../assets/cardData';
 
 const Main = () => (
-  <div>
+  <main>
     {
       cardData.map(({
-        id, title, subtitle, statement, quote,
+        id, image, title, subtitle, statement, quote,
       }) => (
         <Card key={id}>
+          <Card.Image
+            src={image}
+            alt={title}
+          />
           <Card.Title>
             {title}
           </Card.Title>
@@ -24,7 +28,7 @@ const Main = () => (
         </Card>
       ))
     }
-  </div>
+  </main>
 );
 
 export default Main;

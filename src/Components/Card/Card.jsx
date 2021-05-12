@@ -4,6 +4,7 @@ import Paragraph from './Paragraph';
 import Title from './Title';
 import Subtitle from './Subtitle';
 import Quote from './Quote';
+import Image from './Image';
 
 const Card = ({ children }) => (
   <div>
@@ -19,5 +20,6 @@ Card.Title = Title;
 Card.Subtitle = Subtitle;
 Card.Paragraph = Paragraph;
 Card.Quote = Quote;
+Card.Image = Image;
 
 export default Card;
