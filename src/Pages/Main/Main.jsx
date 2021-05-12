@@ -1,7 +1,8 @@
 import React from 'react';
-import Card from '../../Components/Card';
+import Card from '../../components/Card';
 import cardData from '../../assets/cardData';
-import { TitleWrapper } from '../../Components/Card/Card.styles';
+import Header from '../../components/Header';
+import Body from '../../components/Body';
 
 const Main = () => (
   <main>
@@ -10,26 +11,13 @@ const Main = () => (
         id, image, title, subtitle, statement, quote, variant,
       }) => (
         <Card key={id} variant={variant}>
-          <Card.Header>
-            <Card.Image
-              src={image}
-              alt={title}
-            />
-            <TitleWrapper>
-              <Card.Title>
-                {title}
-              </Card.Title>
-              <Card.Subtitle>
-                {subtitle}
-              </Card.Subtitle>
-            </TitleWrapper>
-          </Card.Header>
-          <Card.Paragraph>
-            {statement}
-          </Card.Paragraph>
-          <Card.Quote>
-            {quote}
-          </Card.Quote>
+          <Header
+            title={title}
+            subtitle={subtitle}
+            image={image}
+            variant={variant}
+          />
+          <Body statement={statement} quote={quote} variant={variant} />
         </Card>
       ))
     }
