@@ -3,7 +3,7 @@ import { darken, lighten } from 'polished';
 import styleSettings from '../../styleSettings';
 
 const {
-  colors, sizes, breakPoints, weights,
+  colors,
 } = styleSettings;
 
 const Wrapper = styled.div`

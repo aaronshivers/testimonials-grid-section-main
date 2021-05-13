@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Wrapper } from './Card.styles';
+import Wrapper from './Card.styles';
 
 const Card = ({ children, variant }) => (
   <Wrapper variant={variant}>

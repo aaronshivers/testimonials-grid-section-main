@@ -3,7 +3,7 @@ import Card from '../../components/Card';
 import cardData from '../../assets/cardData';
 import Header from '../../components/Header';
 import Body from '../../components/Body';
-import { Wrapper } from './Main.styles';
+import Wrapper from './Main.styles';
 
 const Main = () => (
   <Wrapper>

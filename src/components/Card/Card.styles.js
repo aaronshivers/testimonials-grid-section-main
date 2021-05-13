@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import styleSettings from '../../styleSettings';
 
 const {
-  colors, sizes, breakPoints, weights,
+  colors, breakPoints,
 } = styleSettings;
 
 const Wrapper = styled.div`
@@ -49,5 +49,5 @@ const Wrapper = styled.div`
 `;
 
 export {
-  Wrapper,
+  Wrapper as default,
 };
