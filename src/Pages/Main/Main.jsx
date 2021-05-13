@@ -3,9 +3,10 @@ import Card from '../../components/Card';
 import cardData from '../../assets/cardData';
 import Header from '../../components/Header';
 import Body from '../../components/Body';
+import { Wrapper } from './Main.styles';
 
 const Main = () => (
-  <main>
+  <Wrapper>
     {
       cardData.map(({
         id, image, title, subtitle, statement, quote, variant,
@@ -21,7 +22,7 @@ const Main = () => (
         </Card>
       ))
     }
-  </main>
+  </Wrapper>
 );
 
 export default Main;

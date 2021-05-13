@@ -37,6 +37,8 @@ const Container = styled.div`
   @media(min-width: ${breakPoints.desktop}) {
     display: flex;
     align-items: center;
+    width: 75vw;
+    height: 100vh;
   }
 `;
 
